@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Photography | Nature & Sunsets</title>
+  <meta name="description" content="A photography portfolio capturing nature, sunsets, animals, and the little details of life.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo" data-translate="brand-name">My Photography</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#gallery" data-translate="nav-gallery">Gallery</a>
+        <a href="#about" data-translate="nav-about">About</a>
+        <a href="#shop" data-translate="nav-shop">Shop</a>
+        <a href="#gear" data-translate="nav-gear">My Gear</a>
+        <a href="#contact" data-translate="nav-contact">Contact</a>
+      </nav>
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="changeLanguage('en')">EN</button>
+        <button class="lang-btn" onclick="changeLanguage('es')">ES</button>
+        <button class="lang-btn" onclick="changeLanguage('cat')">CAT</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title" data-translate="hero-title">My Photography</h1>
+      <p class="hero-tagline" data-translate="hero-tagline">Capturing nature's beauty, one moment at a time</p>
+      <a href="#gallery" class="btn btn-primary" data-translate="hero-btn">View Portfolio</a>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <h2 class="section-title" data-translate="gallery-title">Portfolio</h2>
+      <p class="section-subtitle" data-translate="gallery-subtitle">A selection of my favorite moments</p>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all" data-translate="filter-all">All</button>
+        <button class="filter-btn" data-filter="nature" data-translate="filter-nature">Nature</button>
+        <button class="filter-btn" data-filter="sunsets" data-translate="filter-sunsets">Sunsets & Sunrises</button>
+        <button class="filter-btn" data-filter="animals" data-translate="filter-animals">Animals</button>
+        <button class="filter-btn" data-filter="drinks" data-translate="filter-drinks">Drinks & Details</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Nature -->
+        <div class="gallery-item" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1441974231531-c622322398b3?w=800&q=80" alt="Forest" loading="lazy">
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1470071459604-3b433a5e0e6e?w=800&q=80" alt="Mountain landscape" loading="lazy">
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1501854140804-4d4b1b3b2b1b?w=800&q=80" alt="Green valley" loading="lazy">
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1506905925345-5c2e4b1b1b1b?w=800&q=80" alt="River" loading="lazy">
+        </div>
+        <!-- Sunsets -->
+        <div class="gallery-item" data-category="sunsets">
+          <img src="https://images.unsplash.com/photo-1495615080079-4b1b1b1b1b1b?w=800&q=80" alt="Sunset over the sea" loading="lazy">
+        </div>
+        <div class="gallery-item" data-category="sunsets">
+          <img src="https://images.unsplash.com/photo-1507525428036-bb3b1b1b1b1b?w=800&q=80" alt="Golden sunset" loading="lazy">
+        </div>
+        <div class="gallery-item" data-category="sunsets">
+          <img src="https://images.unsplash.com/photo-1472214103457-1b1b1b1b1b1b?w=800&q=80" alt="Sunrise" loading="lazy">
+        </div>
+        <div class="gallery-item" data-category="sunsets">
+          <img src="https://images.unsplash.com/photo-1501594907352-04cda1b1b1b1b?w=800&q=80" alt="Sunset clouds" loading="lazy">
+        </div>
+        <!-- Animals -->
+        <div class="gallery-item" data-category="animals">
+          <img src="https://images.unsplash.com/photo-1474511320720-1b1b1b1b1b1b?w=800&q=80" alt="Fox" loading="lazy">
+        </div>
+        <div class="gallery-item" data-category="animals">
+          <img src="https://images.unsplash.com/photo-1546182990-1b1b1b1b1b1b?w=800&q=80" alt="Bird" loading="lazy">
+        </div>
+        <div class="gallery-item" data-category="animals">
+          <img src="https://images.unsplash.com/photo-1552053831-1b1b1b1b1b1b?w=800&q=80" alt="Dog" loading="lazy">
+        </div>
+        <!-- Drinks -->
+        <div class="gallery-item" data-category="drinks">
+          <img src="https://images.unsplash.com/photo-1495474472287-1b1b1b1b1b1b?w=800&q=80" alt="Coffee" loading="lazy">
+        </div>
+        <div class="gallery-item" data-category="drinks">
+          <img src="https://images.unsplash.com/photo-1544145945-1b1b1b1b1b1b?w=800&q=80" alt="Juice" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about-section">
+    <div class="container about-container">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1452587920148-1b1b1b1b1b1b?w=800&q=80" alt="Photographer" loading="lazy">
+      </div>
+      <div class="about-content">
+        <h2 class="section-title" data-translate="about-title">About Me</h2>
+        <p class="about-text" data-translate="about-text">Hi! I'm a passionate photographer based in Spain. I love capturing the golden light of sunsets, the beauty of nature, and the little details that make life special. Every photo tells a story — and I want to share those stories with you.</p>
+        <p class="about-text" data-translate="about-text-2">When I'm not taking photos, I'm exploring new places, chasing the perfect light, and learning something new every day.</p>
+        <a href="#contact" class="btn btn-secondary" data-translate="about-btn">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SHOP ===== -->
+  <section id="shop" class="section shop-section">
+    <div class="container">
+      <h2 class="section-title" data-translate="shop-title">Shop</h2>
+      <p class="section-subtitle" data-translate="shop-subtitle">Bring my photos into your home</p>
+      <div class="shop-cards">
+        <div class="shop-card">
+          <div class="shop-icon">🖼️</div>
+          <h3 data-translate="shop-prints-title">Prints & Posters</h3>
+          <p data-translate="shop-prints-text">Beautiful prints of my best photos — posters, canvases, and framed art.</p>
+          <a href="#" class="btn btn-primary" data-translate="shop-prints-btn">Coming Soon</a>
+        </div>
+        <div class="shop-card">
+          <div class="shop-icon">📸</div>
+          <h3 data-translate="shop-stock-title">Stock Photos</h3>
+          <p data-translate="shop-stock-text">License my photos for your projects, websites, and more.</p>
+          <a href="#" class="btn btn-primary" data-translate="shop-stock-btn">Coming Soon</a>
+        </div>
+        <div class="shop-card">
+          <div class="shop-icon">🎨</div>
+          <h3 data-translate="shop-presets-title">Presets</h3>
+          <p data-translate="shop-presets-text">My signature editing presets for your own photos.</p>
+          <a href="#" class="btn btn-primary" data-translate="shop-presets-btn">Coming Soon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MY GEAR ===== -->
+  <section id="gear" class="section gear-section">
+    <div class="container">
+      <h2 class="section-title" data-translate="gear-title">My Gear</h2>
+      <p class="section-subtitle" data-translate="gear-subtitle">The equipment I use to capture these moments</p>
+      <div class="gear-grid">
+        <div class="gear-item">
+          <div class="gear-icon">📷</div>
+          <h3 data-translate="gear-camera">Camera</h3>
+          <p data-translate="gear-camera-text">My trusted camera body</p>
+          <a href="#" class="btn btn-secondary" data-translate="gear-btn">Learn More</a>
+        </div>
+        <div class="gear-item">
+          <div class="gear-icon">🔭</div>
+          <h3 data-translate="gear-lens">Lens</h3>
+          <p data-translate="gear-lens-text">My favorite lens for every shot</p>
+          <a href="#" class="btn btn-secondary" data-translate="gear-btn">Learn More</a>
+        </div>
+        <div class="gear-item">
+          <div class="gear-icon">🎒</div>
+          <h3 data-translate="gear-tripod">Tripod</h3>
+          <p data-translate="gear-tripod-text">Stable shots, every time</p>
+          <a href="#" class="btn btn-secondary" data-translate="gear-btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title" data-translate="contact-title">Contact</h2>
+      <p class="section-subtitle" data-translate="contact-subtitle">Have a question or just want to say hi?</p>
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" data-translate="contact-name" required>
+        <input type="email" name="email" placeholder="Your Email" data-translate="contact-email" required>
+        <textarea name="message" placeholder="Your Message" data-translate="contact-message" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary" data-translate="contact-send">Send Message</button>
+      </form>
+      <div class="support-box">
+        <h3 data-translate="support-title">Support My Work</h3>
+        <p data-translate="support-text">If you enjoy my photos, you can support me with a small tip!</p>
+        <a href="#" class="btn btn-secondary" data-translate="support-btn">☕ Buy Me a Coffee</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text" data-translate="footer-text">© 2026 My Photography. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Email">✉️</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">&#10094;</button>
+    <img class="lightbox-image" id="lightboxImage" src="" alt="Enlarged photo">
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next">&#10095;</button>
+  </div>
+
+  <script src="js/translations.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
